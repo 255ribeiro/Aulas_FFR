@@ -41,7 +41,7 @@ repo_name: "255ribeiro/infinity_ws_plotly_dash"
 
 nav:
   - Home: index.md
-  - Virtual environment: ./aulas/bim_intro/index.html
+  - Introdução a Computação gráfica: ./aulas/bim_intro/index.html
 
 
   
