@@ -35,9 +35,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-site_url: "https://255ribeiro.github.io/infinity_ws_plotly_dash/"
-repo_url: "https://github.com/255ribeiro/infinity_ws_plotly_dash"
-repo_name: "255ribeiro/infinity_ws_plotly_dash" 
+site_url: "https://255ribeiro.github.io/Aulas_FFR/"
+repo_url: "https://github.com/255ribeiro/Aulas_FFR"
+repo_name: "255ribeiro/Aulas_FFR" 
 
 nav:
   - Home: index.md
