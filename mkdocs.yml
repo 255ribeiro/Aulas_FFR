@@ -42,7 +42,7 @@ repo_name: "255ribeiro/Aulas_FFR"
 nav:
   - Home: index.md
   - Elementos de Computação gráfica - cimatec 2023: ./aulas/bim_intro/index.html
-  - Introdução a Computação gráfica ufba 2023: ./aulas/bim_intro_ufba/index.html
+  - Introdução a Computação gráfica - ufba 2023: ./aulas/bim_intro_ufba/index.html
 
 
   
