@@ -1,884 +1,358 @@
+
 <!doctype html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>Elementos de Computação Aplicada à Arquitetura</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/league.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-</head>
-
-<style>
-	.row {
-		display: flex;
-
-	}
-
-	.column {
-
-		flex: 45%;
-		padding: 1px;
-
-	}
-
-	.caption {
-		font-size: 1rem;
-
-	}
-</style>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-
-			<!-- CAPA -->
-			<section style="margin: 0px; padding: 0px;">
-
-
-				<img src=".\img\logo_cimatec\logo_senai_cimatec_02.png" alt="cimatec" style="width:550px">
-
-
-
-				<h4>Elementos de Computação Aplicada à Arquitetura, Engenharia e Construção</h4>
-
-
-				<br>
-
-				<p style="font-size: 22px; ">SENAI-CIMATEC - 10/02/2023</p>
-
-				<div class="row" style="width: 80%">
-					<div class="column">
-						<p style="font-size: 22px;">Fernando Ferraz Ribeiro fernando.ribeiro@doc.senaicimatec.edu.br</p>
-					</div>
-					<div class="column">
-						<img src="./qrcode.png" alt="qrcode" style="width:150px; position: absolute;
-			right:40px; bottom:0px">
-					</div>
-				</div>
-
-			</section>
-
-			<section>
-				<blockquote
-					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-					"The more accurate the map, the more it resembles the territory. The most accurate map possible
-					would be the territory, and thus would be perfectly accurate and perfectly useless."
-				</blockquote>
-				<p> Neil Gaiman, American Gods</p>
-
-
-			</section>
-
-			<!-- Modelos Geométricos tradicionais -->
-
-			<section data-background-color="white">
-				<section>
-					<h3>Primeiras Civilizações</h3>
-
-					<img src="./img/Egito/EST_3.jpg" alt="egito" style=" width: 75%">
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://www.satpalda.com/uploads/images/EST_3.jpg">https://www.satpalda.com/uploads/images/EST_3.jpg</a>
-
-
-
-
-				</section>
-				<section>
-
-					<h3>Modelos geométricos tradicionais</h3>
-					<div style="height: 30%">
-						<div class="column">
-
-							<img src="./img/Modelos_tradicionais/gaudi_01.png" alt="lcad" style="height:15rem;">
-
-							<img src="./img/Modelos_tradicionais/gaudi_02.png" alt="lcad" style="height:15rem">
-
-							<img src="./img/Modelos_tradicionais/gaudi_03.png" alt="lcad" style="height:15rem">
-
-
-
-
-						</div>
-					</div>
-					<div style="padding-bottom: 10px;">
-						<p style="font-size: .8rem; ">FONTE: PUIG-BOADA, I.; ARIBAU, A. L’eglesia de la colonia
-							Güell.
-							Barcelona: Lumen, 1976.</p>
-					</div>
-
-
-
-
-
-
-				</section>
-
-			</section>
-
-			<section data-background-color="lightgray">
-				<section>
-
-					<h3>Precursores da computação: <br> O Ábaco</h3>
-					<figure>
-						<img src="./img/precursores_comp/abaco_babilinio_1.png" alt="lcad" style="height:18rem;">
-						<figcaption class="caption"> Ábaco Babilônico Por volta de 2700-2300 a.C.</figcaption>
-					</figure>
-				</section>
-				<section>
-
-					<h3>Precursores da computação</h3>
-
-					<div class="row">
-
-						<figure>
-
-							<img src="./img/precursores_comp/Anticitera.png" alt="lcad" style="height:15rem;">
-							<figcaption class="caption">Máquina de Anticítera (87 AC)</figcaption>
-						</figure>
-
-						<figure>
-
-							<img src="./img/precursores_comp/Wilhelm.png" alt="lcad" style="height:15rem">
-							<figcaption class="caption">Wilhelm Schickard (1592-1635)</figcaption>
-
-						</figure>
-
-						<figure>
-							<img src="./img/precursores_comp/pascal.jpg" alt="lcad" style="height:15rem">
-							<figcaption class="caption">Blaise Pascal (1623-1662)</figcaption>
-						</figure>
-
-						<figure>
-
-							<img src="./img/precursores_comp/leibniz.jpg" alt="lcad" style="height:15rem">
-							<figcaption class="caption">Gottfried Wilhelm Leibniz (1646-1726)</figcaption>
-
-						</figure>
-
-
-						<figure>
-
-							<img src="./img/precursores_comp/jac.png" alt="lcad" style="height:15rem">
-							<figcaption class="caption">Joseph Marie Jacquard (1752-1834)</figcaption>
-
-						</figure>
-
-
-
-
-
-					</div>
-
-
-				</section>
-
-				<section style="width: 100%; position: relative;">
-
-					<h3>Primeiro Computador programável</h3>
-
-					<div class="row" style="width: 100%;margin: 0 auto">
-
-						<figure>
-
-							<img src="./img/precursores_comp/ada.jpg" alt="Ada" style="height:25rem;">
-							<figcaption class="caption">Ada Lovelace (1815-1852)</figcaption>
-						</figure>
-
-						<figure>
-
-							<img src="./img/precursores_comp/Babbage.jpg" alt="Babbage" style="height:25rem">
-							<figcaption class="caption">Charles Babbage (1792-1871)</figcaption>
-
-						</figure>
-
-					</div>
-
-				</section>
-			</section>
-
-
-			<!-- Pioneiros da computação -->
-
-			<section>
-
-				<section>
-
-					<h3> Primeiros computadores</h3>
-					<h5></h5>
-
-					<div class="row" style="width: 100%;margin: 0 auto">
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/turing.jpg" alt="lcad" style="height:20rem;">
-							<figcaption class="caption">Alan Turing (1912-1954)</figcaption>
-						</figure>
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/bombe.jpg" alt="lcad" style="height:20rem">
-							<figcaption class="caption">Replica do computador <br> Bombe (Alan Turing - 1939)
-							</figcaption>
-
-						</figure>
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/colossus.jpg" alt="lcad" style="height:20rem">
-							<figcaption class="caption">Computador Colossus<br> (Alan Turing - 1943)</figcaption>
-
-						</figure>
-
-					</div>
-				</section>
-
-				<section>
-
-
-					<h3> Primeiros computadores</h3>
-					<h5></h5>
-
-					<div class="row" style="width: 100%;margin: 0 auto">
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/z3.jpg" alt="lcad" style="height:15rem;">
-							<figcaption class="caption">Z3 (Réplica) - 1939/1941 <br> Konrad Zuse </figcaption>
-						</figure>
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/mark1.jpg" alt="lcad" style="height:15rem">
-							<figcaption class="caption">Harvard Mark 1 1944</figcaption>
-
-						</figure>
-
-						<figure>
-
-							<img src="./img/pioneiros_comp/eniac.jpg" alt="lcad" style="height:15rem">
-							<figcaption class="caption">ENIAC - 1945 John Mauchly e J. Presper Eckert</figcaption>
-
-						</figure>
-
-					</div>
-
-				</section>
-
-				<section>
-
-					<h4>Primeiras Linguagens de Programação</h4>
-
-					<div class="row" style="width: 100%;margin: 0 auto">
-						<div class="column">
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/cobol.png" alt="lcad" style="height:10rem;">
-								<figcaption class="caption">Flow-Matic / COBOL 1955 </figcaption>
-							</figure>
-
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/hopper.jpg" alt="lcad" style="height:10rem">
-								<figcaption class="caption"> Grace Hopper (1906 -1992)</figcaption>
-
-							</figure>
-
-						</div>
-						<div class="column">
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/fortran.png" alt="lcad" style="height:10rem;">
-								<figcaption class="caption">FORTRAN 1954/1957 </figcaption>
-							</figure>
-
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/backus.png" alt="lcad" style="height:10rem">
-								<figcaption class="caption"> John Backus (1924 -2007)</figcaption>
-
-							</figure>
-
-						</div>
-
-						<div class="column" style="position: relative;"">
-							<figure>
-							
-							<img src=" ./img/primeiras_ling_prog/lisp.png" alt="lcad" style="max-height:10rem;">
-							<figcaption class="caption">LISP 1958</figcaption>
-							</figure>
-
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/McCarthy.png" alt="lcad"
-									style="transform: translate(0rem, 6.1rem); height:10rem">
-								<figcaption class="caption" style="transform: translate(0rem, 6.1rem);">John
-									McCarthy
-									(1927 -2011)</figcaption>
-
-							</figure>
-
-						</div>
-
-						<div class="column">
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/c.png" alt="lcad" style="height:10rem;">
-								<figcaption class="caption">C 1972</figcaption>
-							</figure>
-
-							<figure>
-
-								<img src="./img/primeiras_ling_prog/ritchie.jpg" alt="lcad" style="height:10rem">
-								<figcaption class="caption"> Dennis Ritchie (1941 -2011)</figcaption>
-
-							</figure>
-
-						</div>
-
-					</div>
-
-				</section>
-
-			</section>
-
-			<!-- Computação gráfica e CAD-->
-
-			<section>
-				<section>
-					<h3>Computação gráfica e CAD</h3>
-					<h5> Padrões de Turing - 1952</h5>
-					<figure>
-
-						<img src="./img/comp_gra/turing_patterns.png" alt="lcad" style="height:100%">
-						<figcaption class="caption"> Padrões de Turing</figcaption>
-
-					</figure>
-				</section>
-				<section>
-
-					<h5>Ivan Sutherland - Sketchpad - protótipo de CAD 1962</h5>
-
-					<div class="row">
-						<div class="column">
-							<figure>
-
-								<img src="./img/comp_gra/sp_comp_01.png" alt="lcad" style="height:16rem;">
-
-							</figure>
-
-							<figure>
-
-								<img src="./img/comp_gra/sp_comp_02.png" alt="lcad" style="height:16rem">
-
-							</figure>
-
-						</div>
-						<div class="column">
-							<figure>
-
-								<img src="./img/comp_gra/sp_tela_01.png" alt="lcad" style="height:16rem;">
-
-							</figure>
-
-							<figure>
-
-								<img src="./img/comp_gra/sp_tela_02.png" alt="lcad" style="height:16rem">
-
-							</figure>
-						</div>
-
-				</section>
-
-				<section data-background-color="white">
-					<h4>Eastman, C. M., Fisher, D., Lafue, G., Lividini, J., Stoker, D., and Yessios, C. (1974). An
-						Outline of the Building Description System. Research Report</h4>
-
-					<img src="./img/comp_gra/eastman.jpeg" alt="lcad" style="width:30rem"><br>
-
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://eric.ed.gov/?id=ED113833">https://eric.ed.gov/?id=ED113833</a>
-
-				</section>
-
-				<section data-background-color="white">
-					<h3>Algoritmos Generativos / Modelagem Paramétrica</h3>
-					<h5>Stiny, Mitchell 1978 The Paladian Grammar</h5>
-
-					<figure>
-
-						<img src="./img/comp_gra/stiny_mitchell.png" alt="lcad" style="height:25rem">
-
-
-					</figure>
-				</section>
-				<section>
-
-					<h3>Computação Gráfica no Cinema</h3>
-					<h5>Tron 1982</h5>
-
-					<div class="row">
-
-						<figure>
-
-							<img src="./img/comp_gra/tron_poster.jpg" alt="lcad" style="height:15rem;">
-
-						</figure>
-
-
-						<figure>
-
-							<img src="./img/comp_gra/tron_city.png" alt="lcad" style="height:15rem">
-
-						</figure>
-
-
-						<figure>
-
-							<img src="./img/comp_gra/tron_progs.png" alt="lcad" style="height:15rem">
-
-						</figure>
-					</div>
-
-				</section>
-
-				<section>
-
-
-					<h4> Autocad (1982)</h4>
-
-
-					<img src="./img/comp_gra/autocad 1982.jpg" alt="lcad" style="height:25rem;">
-
-					<br>
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://www.youtube.com/watch?v=070Y8V3Mck4">Autocad 2.19 (1984) em ação</a>
-					<br>
-
-
-
-				</section>
-				<section>
-
-					<h3> Classificação dos programas de projeto - CAD</h3>
-
-
-					<ul style="font-size: 1.8 rem;">
-
-
-
-						<li>
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Computer-aided_design">CAD ou CADD - Computer-aided design</a>
-						</li>
-
-						<li>
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Computer-aided_architectural_design">CAAD -
-								Computer-aided
-								architectural design</a>
-						</li>
-
-						<li>
-
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Computer-aided_engineering">CAE - computer-aided
-								engineering</a>
-
-						</li>
-
-						<li>
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Computer-aided_manufacturing">CAM - computer-aided
-								manufacturing</a>
-
-						</li>
-
-						<li>
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Computer-aided_facility_management">CAFM -
-								computer-aided facility
-								management</a>
-
-						</li>
-
-
-						<li>
-							<a target="_blank" style="font-size: 1.2rem;"
-								href="https://en.wikipedia.org/wiki/Numerical_control"> CNC -
-								computer numerical control</a>
-
-						</li>
-
-
-
-					</ul>
-
-				</section>
-
-
-
-				<section>
-					<h4>GUARDIOLA HOUSE - Peter Eisenman(1988)</h4>
-
-					<div class="row">
-
-						<figure>
-
-							<img src="./img/comp_gra/guardiola_01.png" alt="lcad" style="height:25rem;">
-
-						</figure>
-
-						<figure>
-
-							<img src="./img/comp_gra/guardiola_02.png" alt="lcad" style="height:25rem;">
-
-						</figure>
-					</div>
-				</section>
-				<section>
-					<h3>Frank Gehry e Rick Smith - 1991</h3>
-
-					<img src="./img/comp_gra/fg_rs.png" alt="lcad" style="height:25rem;">
-					<br>
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://www.youtube.com/watch?v=FHyJGiJytUw">Rick Smith Receives Collaborative
-						Achievement Award</a>
-					<br>
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://metropolismag.com/programs/rick-smith-joins-frank-gehry-1991/">Rick Smith
-						Joins Frank Gehry – 1991</a>
-
-
-
-				</section>
-			</section>
-
-			<!-- BIM  -->
-			<section>
-				<section>
-					<h3>Modelos Geométricos Digitais</h3>
-
-					<div class="row">
-
-						<figure>
-							<img src="./img/geom_dig/arq.png" alt="lcad" style="height:20rem;">
-						</figure>
-						<figure>
-							<img src="./img/geom_dig/estrut.png" alt="lcad" style="height:20rem;">
-						</figure>
-					</div>
-				</section>
-				<section>
-					<h3>O conceito de <span style="color: lightcoral">BIM</span> </span></h3>
-					<div style="font-size: 1.5rem;">
-						<p>O termo Building Information Model (BIM) aparece pela primeira vez, nesta pesquisa, entre
-							as
-							palavras-chaves do artigo de Nederveen e Tolman (1992). A definição do termo entre os
-							artigos mais citados e que estão no escopo desta pesquisa é de Succar (2009), que usa um
-							trecho de Penttilä (2006).</p>
-
-						<p>Succar afirma que <b style="color: lightcoral;">BIM é um conjunto de políticas, processos
-								e
-								tecnologias que, interagindo, geram uma metodologia para a gestão, em formato
-								digital,
-								do projeto de uma edificação e de seus dados, durante todo seu ciclo de vida.</b>
-						</p>
-
-					</div>
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://www.proceedings.blucher.com.br/article-details/a-evoluo-do-significado-atribudo-ao-acrnimo-bim-uma-perspectiva-no-tempo-27662">Trecho
-						do artigo: GASPAR, J. A.; RUSCHEL, R. C. A evolução do significado atribuído ao acrônimo BIM
-						:
-						Uma perspectiva no tempo The evolution of the meaning ascribed to the acronym BIM : A
-						perspective in timeSIGraDi 2017, XXI Congreso de la Sociedad Ibero-americana de Gráfica
-						Digital.
-						Anais...Concepcíon, Chile: 2017</a>
-
-				</section>
-
-				<section>
-
-					<h3>Ciclo de vida da edificação</h3>
-					<div>
-						<img src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2016/07/Pic-12.jpg"
-							alt="ciclo" style=" width: 80%">
-					</div>
-
-				</section>
-				<section>
-
-					<h3>CAD x BIM</h3>
-
-					<div class="row">
-
-						<figure>
-							<img src="./img/bim_ilustracao/green_bim_cad.png" alt="lcad" style="height:30rem;">
-						</figure>
-						<figure>
-							<img src="./img/bim_ilustracao/green_bim_bim.png" alt="lcad" style="height:30rem;">
-						</figure>
-					</div>
-
-
-					<p style="font-size: 1rem;">KRYGIEL, E.; NIES, B. Green BIM: Successful Sustainable Design with
-						Building Information Modeling. Indianapolis: Wiley publishing inc, 2008.</p>
-
-
-
-
-				</section>
-				<section>
-					<h3>CARACTERÍSTICAS DOS SISTEMAS BIM</h3>
-					<ul style="font-size: 1.8rem;">
-						<li>Organização das informações em um único modelo geométrico digital</li>
-						<li>Modelagem paramétrica</li>
-						<li>Orientação á objetos (POO)</li>
-						<li>Comunicação e colaboração entre os diversos profissionais envolvidos no projeto</li>
-						<li>Suporte a todo o ciclo de vida da edificação</li>
-					</ul>
-				</section>
-
-				<section>
-					<H3>Alguns editores BIM para Projeto</H3>
-
-
-
-					<div class="row">
-						<figure>
-							<img src="./img/bim_ilustracao/revit_logo.png" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Revit</figcaption>
-						</figure>
-
-
-						<figure>
-							<img src="./img/bim_ilustracao/archicad_logo.png" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Archicad</figcaption>
-						</figure>
-
-						<figure>
-							<img src="./img/bim_ilustracao/Vectroworks_logo.png" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">VectorWorks</figcaption>
-						</figure>
-
-
-						<figure>
-							<img src="./img/bim_ilustracao/bentley_logo.jpg" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Bentley</figcaption>
-						</figure>
-
-						<figure>
-							<img src="./img/bim_ilustracao/Logo-VA2.png" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Visualarq</figcaption>
-						</figure>
-
-						<figure>
-							<img src="./img/bim_ilustracao/Bricsys_part_of_Hexagon_logo.svg" alt="lcad"
-								style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Bricscad</figcaption>
-						</figure>
-
-						<figure>
-							<img src="./img/bim_ilustracao/FreeCAD016-logo.svg" alt="lcad" style="height:8rem;">
-							<figcaption style="font-size: 
-						1.3rem;">Freecad</figcaption>
-						</figure>
-
-					</div>
-
-				</section>
-				<section>
-
-					<h3>Curva de MacLeamy</h3>
-
-					<figure>
-						<img src="./img/bim_ilustracao/Macleamy.png" alt="lcad" style="height:25rem;">
-						<figcaption style="font-size: 
-							1.3rem;"> <a target="_blank"
-								href="https://www.researchgate.net/figure/The-MacLeamy-Curve-9_fig1_315359204">https://www.researchgate.net/figure/The-MacLeamy-Curve-9_fig1_315359204</a>
-						</figcaption>
-					</figure>
-
-				</section>
-				<section>
-
-					<h4>COMPARAÇÃO DO TEMPO USADO NAS DIFERENTES ETAPAS DO PROJETO</h4>
-					<h4>COM ADOÇÃO DE DIFERENTES TECNOLOGIAS</h4>
-
-					<figure>
-						<img src="./img/bim_ilustracao/Banks.png" alt="lcad" style="height:25rem;">
-						<figcaption style="font-size: 
-							1.3rem;"> <a target="_blank"
-								href="http://www.shoegnome.com/2015/12/09/bim-still-bankrupting-firm/">http://www.shoegnome.com/2015/12/09/bim-still-bankrupting-firm/</a>
-						</figcaption>
-					</figure>
-
-				</section>
-
-				<section>
-					<h3>
-						LOD - Level Of development
-					</h3>
-
-					<ul style="font-size: 2rem;">
-						<li>LOD 100 - Fase conceitual</li>
-						<li>LOD 200 - Projeto em desenvolvimento</li>
-						<li>LOD 300 - Documentação para construção</li>
-						<li>LOD 350 - Integração das disciplinas de projetos</li>
-						<li>LOD 400 - Construção</li>
-						<li>LOD 500 - As built - Gerenciamento e manutenções</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Dimensões do BIM</h3>
-
-					<figure>
-						<img src="https://s3-eu-west-1.amazonaws.com/drawbotics-blog/2018/10/BIM3.jpg" alt="lcad"
-							style="height:25rem;">
-						<figcaption style="font-size: 
-						1.3rem;">Algumas Dimensões do BIM</figcaption>
-					</figure>
-				</section>
-
-
-				<section>
-					<h3> Níveis de Maturidade do BIM</h3>
-
-					<figure>
-						<img src="./img/bim_maturity_levels/BIM_levels_of_maturity.png" alt="lcad"
-							style="height:30rem;">
-
-					</figure>
-
-				</section>
-
-				<section>
-					<h2> Implementando BIM</h2>
-					<p>Obstáculos para a implementação do BIM</p>
-				</section>
-
-				<section>
-					<h3>Documentação do processo BIM</h3>
-
-					<ul style="font-size: 1.8rem;">
-						<li> BIM Mandate</li>
-						<li> BIM Implementation Plan (BIP) </li>
-						<li> BIM Execution Plan (BEP) </li>
-						<li> BIM Protocol </li>
-						<li> Manual de estilo </li>
-
-					</ul>
-					<br>
-					<a target="_blank" href="https://bimdictionary.com/"
-						style="font-size: 1.5rem;">https://bimdictionary.com/</a>
-				</section>
-
-				<section>
-					<h3>IFC e OpenBIM</h3>
-
-					<p style="font-size: 2rem;">Para tornar o BIM uma plataforma aberta, em 1994 cria-se o Building
-						Smart, grupo técnico responsável pelo desenvolvimento do IFC (Industry Foundation Classes),
-						em 1997, protocolo de organização de dados de arquitetura aberta, uma linguagem comum,
-						utilizada para a troca entre modelos de diversos fabricantes;</p>
-
-					<p style="font-size: 2rem;">No entanto, como existem diversas ferramentas de criação com
-						diferentes mecanismos de se criar a geometria e dados associados, no processo de exportação
-						para IFC, esse mapeamento pode não ser bem identificado. Desta forma, pode ocorrer perda de
-						informação.</p>
-					<br>
-					<a target="_blank" href="https://www.buildingsmart.org/">https://www.buildingsmart.org/</a>
-					<br>
-					<a target="_blank"
-						href="https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/">IFC
-						Schema Specifications</a>
-
-
-				</section>
-
-			</section>
-
-			<!-- Conclusão -->
-
-
-			<!-- <section data-background-color="indigo">
-
-					<h3 style="text-align: left;">Conclusão:</h3>
-					<img style="width: 70%;" src="img/will-robots-take-over-our-jobs.jpg" /><br>
-
-					<a target="_blank" style="font-size: 1.2rem;"
-						href="https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg">
-						https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg </a>
-
-				</section> -->
-
-			<!-- <section data-background-color="IndianRed">
-
-					<h3 style="text-align: left;">Referências:</h3>
-					<div style="font-size: 1rem;text-align: justify;">
-
-						<p>ALBINO, V.; BERARDI, U.; DANGELICO, R. M. Smart Cities: Definitions, Dimensions, Performance, and Initiatives. Journal of Urban Technology, v. 22, n. 1, p. 3–21, 2 jan. 2015.</p>
-
-						<p>CHANG, K.-M.; DZENG, R.-J.; WU, Y.-J. An Automated IoT Visualization BIM Platform for Decision Support in Facilities Management. Applied Sciences, v. 8, n. 7, p. 1086, 2018.</p> 
-
-						<p>CHEN, L. et al. Estimating Vehicle and Pedestrian Activity from Town and City Traffic Cameras. Sensors, 2021.</p> 
-						
-						<p>REIS, J. et al. Digital Transformation: A Literature Review and Guidelines for Future Research. Em: ROCHA, Á. et al. (Eds.). Trends and Advances in Information Systems and Technologies. Advances in Intelligent Systems and Computing. Cham: Springer International Publishing, 2018. v. 745p. 411–421.</p>
-						
-						<p>SHANG, Y. et al. Long-term evaluation on urban intensive land use in five fast-growing cities of northern China with GEE support. Scientific Reports, p. 1–14, 2021.</p> 
-						
-						<p>SZOCSKA, M. et al. Countrywide population movement monitoring using mobile devices generated (big) data during the COVID-19 crisis. Scientific Reports, v. 11, n. 1, p. 1–9, 2021.</p> 
-						
-						<p>VIAL, G. Understanding digital transformation: A review and a research agenda. The Journal of Strategic Information Systems, v. 28, n. 2, p. 118–144, jun. 2019.</p> 
-						
-						<p>ZHONG, R. Y. et al. Prefabricated construction enabled by the Internet-of-Things. Automation in Construction, v. 76, p. 59–70, 2017.</p> 
-
-					</div>
-
-				</section>
-
-			</section> -->
-
-		</div>
-	</div>
-
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			transition: "convex",
-			slideNumber: true,
-			hash: true,
-			progress: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://255ribeiro.github.io/Aulas_FFR/aulas/bim_intro/index.html">
+      
+      <link rel="icon" href="../../figs/chart_white/icons8-doughnut-chart-96.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Aulas - Aulas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../overrides/css/extra_css.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aulas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Aulas" class="md-header__button md-logo" aria-label="Aulas" data-md-component="logo">
+      
+  <img src="../../figs/chart_white/icons8-doughnut-chart-96.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Aulas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Aulas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="yellow"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/255ribeiro/Aulas_FFR" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    255ribeiro/Aulas_FFR
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Aulas" class="md-nav__button md-logo" aria-label="Aulas" data-md-component="logo">
+      
+  <img src="../../figs/chart_white/icons8-doughnut-chart-96.png" alt="logo">
+
+    </a>
+    Aulas
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/255ribeiro/Aulas_FFR" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    255ribeiro/Aulas_FFR
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.md" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capa_cimatec.html" class="md-nav__link">
+        Elementos de Computação gráfica - cimatec 2023
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bim_intro_ufba/index.html" class="md-nav__link">
+        Introdução a Computação gráfica - ufba 2023
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+
+
+
+                  
+
+  <a href="https://github.com/255ribeiro/Aulas_FFR/edit/master/docs/aulas/bim_intro/index.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="aulas">Aulas</h1>
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Fernando Ferraz Ribeiro
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/255ribeiro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCCkMaRdD7PBWhs4JgH5s6_w" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/fernando-ferraz-ribeiro-b49a7bb0/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:ffribeiro@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
 </html>
