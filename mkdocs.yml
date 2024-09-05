@@ -41,6 +41,7 @@ nav:
   - Home: index.md
   - Elementos de Computação gráfica - cimatec 2023: ./aulas/bim_intro/capas/capa_cimatec.html
   - Introdução a Computação gráfica - ufba 2023: ./aulas/bim_intro/capas/capa_ufba.html
+  - Legislação Urbanística - Cimatec 2024: ./aulas/legislacao_urbanistica/capas/capa_cimatec.html
 
 markdown_extensions:
   - admonition

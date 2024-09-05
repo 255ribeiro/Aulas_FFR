@@ -5,15 +5,15 @@ description = ""
 authors = ["Fernando Ferraz Ribeiro <ffribeiro@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-dash = "^2.7.0"
-pandas = "^1.5.2"
+python = "^3.12"
+dash = "^2.18.0"
+pandas = "^1.5.3"
 
-[tool.poetry.dev-dependencies]
-mkdocs = "mkdocs jupyter"
-mkdocs-material = "^8.5.11"
-mkdocs-jupyter = "^0.22.0"
-ipykernel = "^6.18.3"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = "^9.5.34"
+mkdocs-jupyter = "^0.25.0"
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
