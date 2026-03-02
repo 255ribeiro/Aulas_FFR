@@ -31,8 +31,7 @@ Visão geral dos componentes físicos e lógicos de um computador e como se comu
 | # | Diagrama | Descrição |
 |---|----------|-----------|
 | 1.1 | [🖥️ Arquitetura Básica do Computador](diagrama-computador.html) | CPU, memória, disco e dispositivos de entrada e saída. Inclui o ciclo Fetch–Decode–Execute. |
-| 1.2 | [⚙️ CPU, Memória, Entradas e Saídas — Completo](diagrama-cpu-memoria.html) | Fluxo de dados entre todos os componentes com setas animadas e hierarquia de memória. |
-| 1.3 | [⚡ CPU, Memória, Entradas e Saídas — Simplificado](diagrama-simplificado.html) | Versão compacta com os 4 elementos essenciais e fluxo de dados animado. |
+| 1.2 | [⚡ CPU, Memória, Entradas e Saídas](diagrama-simplificado.html) | Os 4 elementos essenciais e fluxo de dados animado entre eles. |
 
 ### Conceitos abordados
 
@@ -138,8 +137,7 @@ pixi run python script.py
 | Arquivo | Tema |
 |---------|------|
 | [diagrama-computador.html](diagrama-computador.html) | Arquitetura básica do computador |
-| [diagrama-cpu-memoria.html](diagrama-cpu-memoria.html) | CPU, memória, E/S — completo |
-| [diagrama-simplificado.html](diagrama-simplificado.html) | CPU, memória, E/S — simplificado |
+| [diagrama-simplificado.html](diagrama-simplificado.html) | CPU, memória, E/S |
 | [diagrama-sistema-arquivos.html](diagrama-sistema-arquivos.html) | Sistema de arquivos Unix/Linux |
 | [diagrama-windows.html](diagrama-windows.html) | Sistema de arquivos Windows NTFS |
 | [diagrama-powershell-v2.html](diagrama-powershell-v2.html) | Comandos PowerShell |
