@@ -132,6 +132,11 @@ pixi run python script.py
 
 ---
 
+
+### Instalação do VScode
+
+[instalação](./aulas/elementos_de_comp/install_vscode.html)
+
 ## 🗂️ Todos os Diagramas
 
 | Arquivo | Tema |
